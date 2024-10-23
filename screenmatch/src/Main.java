@@ -10,6 +10,7 @@ public class Main {
         firstMovie.scoreAnalyzer(9.9);
         firstMovie.scoreAnalyzer(6);
         firstMovie.scoreAnalyzer(8);
+        firstMovie.scoreAnalyzer(5);
 
         System.out.println(firstMovie.averageScore());
         System.out.println(firstMovie.scoreCount);
