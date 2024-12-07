@@ -1,6 +1,8 @@
 package com.geniedev.screenmatch;
 
-public class Movie extends Title {
+import com.geniedev.screenmatch.math.Clasification;
+
+public class Movie extends Title implements Clasification {
 
     private String director;
 
@@ -10,6 +12,11 @@ public class Movie extends Title {
 
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    @Override
+    public int getClasification() {
+        return (int) (averageScore() / 2);
     }
 }
 
