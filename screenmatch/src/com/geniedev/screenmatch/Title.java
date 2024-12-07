@@ -1,4 +1,6 @@
-public class Movie {
+package com.geniedev.screenmatch;
+
+public class Title {
     String name;
     private int releaseDate;
     private int durationMinutes;
@@ -30,14 +32,38 @@ public class Movie {
         this.durationMinutes = durationMinutes;
     }
 
+    public int getDurationMinutes() {
+        return durationMinutes;
+    }
+
     public int getScoreCount(){
         return scoreCount;
     }
 
-   public void ShowSpecs(){
+    public void ShowSpecs(){
         System.out.println("\nEl nombre de la pelicula es: " + name);
         System.out.println("La fecha de lanzamiento fue: " + releaseDate);
-        System.out.println("La pelicula tiene una duracion de: " + durationMinutes + " minutos");
+        System.out.println("La pelicula tiene una duracion de: " + getDurationMinutes() + " minutos");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isIncludedInPlan() {
+        return includedInPlan;
+    }
+
+    public double getScoreSum() {
+        return scoreSum;
+    }
+
+    public void setScoreSum(double scoreSum) {
+        this.scoreSum = scoreSum;
+    }
+
+    public void setScoreCount(int scoreCount) {
+        this.scoreCount = scoreCount;
     }
 
     public void scoreAnalyzer(double score){

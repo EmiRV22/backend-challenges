@@ -1,3 +1,7 @@
+package com.geniedev.screenmatch;
+
+import com.geniedev.screenmatch.math.TimeCalculator;
+
 public class Main {
     public static void main(String[] args) {
         Movie firstMovie = new Movie();
@@ -29,5 +33,20 @@ public class Main {
         secondMovie.scoreAnalyzer(9.1);
         secondMovie.scoreAnalyzer(9.6);
         System.out.println(secondMovie.averageScore());
+
+        Series houseDragons = new Series();
+        houseDragons.setName("House of the Dragons");
+        houseDragons.setReleaseDate(2022);
+        houseDragons.setSeason(2);
+        houseDragons.setMinutesEpisode(55);
+        houseDragons.setEpisodes(8);
+        houseDragons.ShowSpecs();
+
+        TimeCalculator calculator = new TimeCalculator();
+        calculator.addList(firstMovie);
+        calculator.addList(houseDragons);
+        calculator.addList(secondMovie);
+        System.out.println(calculator.getTime());
+
     }
 }
