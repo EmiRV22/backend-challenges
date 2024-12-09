@@ -1,5 +1,6 @@
 package com.geniedev.screenmatch;
 
+import com.geniedev.screenmatch.math.FilterRecomendation;
 import com.geniedev.screenmatch.math.TimeCalculator;
 
 public class Main {
@@ -47,6 +48,18 @@ public class Main {
         calculator.addList(houseDragons);
         calculator.addList(secondMovie);
         System.out.println(calculator.getTime());
+
+        FilterRecomendation filterRecomendation = new FilterRecomendation();
+        filterRecomendation.filter(firstMovie);
+
+        Episodes episodes = new Episodes();
+        episodes.setName("La casa del Dragon");
+        episodes.setNum(1);
+        episodes.setSeries(houseDragons);
+        episodes.setViewsT(320);
+
+        filterRecomendation.filter(episodes);
+
 
     }
 }
