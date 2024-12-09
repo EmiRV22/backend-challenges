@@ -9,6 +9,14 @@ public class Episodes implements Clasification {
     private  Series series;
     private int viewsT ;
 
+    public int getViewsT() {
+        return viewsT;
+    }
+
+    public void setViewsT(int viewsT) {
+        this.viewsT = viewsT;
+    }
+
     public int getNum() {
         return num;
     }
