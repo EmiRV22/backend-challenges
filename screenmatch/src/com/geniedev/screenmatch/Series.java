@@ -6,6 +6,10 @@ public class Series extends Title{
     int episodes ;
     int minutesEpisode ;
 
+    public Series(String name, int releaseDate) {
+        super(name, releaseDate);
+    }
+
 
     @Override
     public int getDurationMinutes() {

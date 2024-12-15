@@ -7,7 +7,27 @@ public class Title {
     private boolean includedInPlan;
     private double scoreSum;
     private int scoreCount;
+    private String director;
 
+
+    //Constructor
+    public Title(String name, int releaseDate) {
+        this.name = name;
+        this.releaseDate = releaseDate;
+    }
+
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+
+    public String getNombre(){
+        return name;
+    }
 
 
     public void setName(String name) {
