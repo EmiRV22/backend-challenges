@@ -1,5 +1,8 @@
-package com.geniedev.screenmatch;
+package com.geniedev.screenmatch.Main;
 
+import com.geniedev.screenmatch.Episodes;
+import com.geniedev.screenmatch.Movie;
+import com.geniedev.screenmatch.Series;
 import com.geniedev.screenmatch.math.FilterRecomendation;
 import com.geniedev.screenmatch.math.TimeCalculator;
 
@@ -26,7 +29,6 @@ public class Main {
         secondMovie.setDurationMinutes(139);
         secondMovie.setIncludedInPlan(true);
 
-
         System.out.println("\nAquí la segunda película");
         secondMovie.ShowSpecs();
         secondMovie.scoreAnalyzer(9.9);
@@ -47,6 +49,7 @@ public class Main {
         System.out.println(calculator.getTime());
 
         FilterRecomendation filterRecomendation = new FilterRecomendation();
+        filterRecomendation.filter(firstMovie);
         filterRecomendation.filter(firstMovie);
 
         Episodes episodes = new Episodes();
@@ -72,6 +75,8 @@ public class Main {
         System.out.println(movieList);
 
         System.out.println("toString Peicula: " + movieList.getFirst().toString());
+
+
 
 
 

@@ -1,6 +1,6 @@
 package com.geniedev.screenmatch;
 
-public class Title {
+public class Title implements Comparable<Title> {
     String name;
     private int releaseDate;
     private int durationMinutes;
@@ -94,4 +94,7 @@ public class Title {
     public double averageScore(){
         return scoreSum / scoreCount;
     }
+
+    @Override
+    public int compareTo(Title other) { return Integer.compare(this.releaseDate, other.releaseDate); }
 }
