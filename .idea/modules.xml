@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BuyBalancer/BuyBalancer.iml" filepath="$PROJECT_DIR$/BuyBalancer/BuyBalancer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exchange/Exchange.iml" filepath="$PROJECT_DIR$/Exchange/Exchange.iml" />
       <module fileurl="file://$PROJECT_DIR$/backendChallenges.iml" filepath="$PROJECT_DIR$/backendChallenges.iml" />
       <module fileurl="file://$PROJECT_DIR$/screenmatch/screenmatch.iml" filepath="$PROJECT_DIR$/screenmatch/screenmatch.iml" />
     </modules>
